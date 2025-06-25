@@ -24,7 +24,7 @@ type ThemedSelectProps = SelectProps & {
   options: Option[];
 };
 
-export default function ThemedSelect({
+export default function CustomSelect({
   id = "themed-select",
   label,
   value,

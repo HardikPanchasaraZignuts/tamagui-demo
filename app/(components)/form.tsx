@@ -1,5 +1,5 @@
 import SizeSelector, { SizeToken } from "@/components/common/SizeSelector";
-import ThemedSelect from "@/components/common/ThemedSelect";
+import CustomSelect from "@/components/common/CustomSelect";
 import Header from "@/components/Header";
 import ThemedSafeAreaView from "@/components/ThemedSafeAreaView";
 import { CheckIcon, Moon, Sun } from "lucide-react-native";
@@ -100,7 +100,7 @@ export default function FormPage() {
             </YStack>
 
             <YStack>
-              <ThemedSelect
+              <CustomSelect
                 label="Country"
                 size={size}
                 native={true}
