@@ -45,9 +45,9 @@ export default function FormPage() {
   };
   return (
     <ThemedSafeAreaView>
-      <YStack flex={1} p="$4" bg="$background">
+      <YStack flex={1} p="$4">
         <Header />
-        <Text fontSize="$7" fontWeight="800" items="center">
+        <Text fontSize="$7" fontWeight="800" text="center" items="center">
           Form Components Showcase
         </Text>
         <SizeSelector onChange={setSize} />

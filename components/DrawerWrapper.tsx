@@ -1,5 +1,5 @@
 import Drawer from "expo-router/drawer";
-import { Home, NotebookPen } from "lucide-react-native";
+import { Home, ImageIcon, Layers, NotebookPen } from "lucide-react-native";
 import { useTheme } from "tamagui";
 
 export default function DrawerWrapper() {
@@ -34,6 +34,20 @@ export default function DrawerWrapper() {
         options={{
           drawerLabel: "Form",
           drawerIcon: ({ color }) => <NotebookPen color={color} size={20} />,
+        }}
+      />
+      <Drawer.Screen
+        name="(components)/organize"
+        options={{
+          drawerLabel: "Organize",
+          drawerIcon: ({ color }) => <Layers color={color} size={20} />,
+        }}
+      />
+      <Drawer.Screen
+        name="(components)/content"
+        options={{
+          drawerLabel: "Content",
+          drawerIcon: ({ color }) => <ImageIcon color={color} size={20} />,
         }}
       />
     </Drawer>
